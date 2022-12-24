@@ -1,0 +1,279 @@
+* {
+	margin: 0;
+	padding: 0;
+	/* overflow: hidden; */
+}
+
+/* This is the main styling */
+
+.main {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(
+			to top,
+			rgb(0, 0, 0, 0.5) 50%,
+			rgb(0, 0, 0, 0.5) 50%
+		),
+		url("./Images/making-a-budget-tracking-finances.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+	width: 100%;
+	height: 75px;
+	margin: auto;
+	display: flex;
+}
+
+.icon {
+	width: 200px;
+	float: left;
+	height: 70px;
+}
+.icon h2 {
+	color: #f2f2f2;
+	font-size: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 30px;
+	float: left;
+	padding-top: 10px;
+}
+
+/* NAVIGATION MENU */
+
+.menu {
+	width: 100%;
+	position: relative;
+	left: 160px;
+	/* width: 72px; */
+	float: left;
+	height: 70px;
+	color: #fff;
+	/* margin-left: 20px; */
+}
+
+.nav-ul {
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-ul li {
+	list-style-type: none;
+	margin-left: 40px;
+	margin-top: 27px;
+	font-size: 14px;
+}
+
+.nav-ul li a {
+	text-decoration: none;
+	color: inherit;
+	font-family: inherit;
+	transition: 0.4s ease-in-out;
+	padding: 10px;
+	border: 1px solid rgb(255, 255, 255, 0);
+	border-radius: 15px;
+	margin: 5px;
+}
+
+.nav-ul li a:hover {
+	border: 1px solid #fff;
+}
+
+/* SEARCH AREA */
+
+.search {
+	position: relative;
+	width: 30%;
+	/* width: 330px; */
+	float: left;
+	margin: 0;
+	/* margin-left: 200px; */
+	padding: 20px;
+	display: flex;
+}
+
+.search-bar {
+	font-family: "Times New Roman", Times, serif;
+	width: 100%;
+	height: 40px;
+	background: transparent;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 10px 0 0 10px;
+	border-right: none;
+	padding: 10px;
+	float: left;
+	color: #fff;
+}
+
+.search .btn {
+	/* width: 100px; */
+	margin: 0;
+	height: 40px;
+	padding: 10px 30px;
+	border-radius: 0 10px 10px 0;
+	/* border: 0.5px solid #fff; */
+	background: #fff;
+	color: #000;
+	font-size: 1em;
+	font-weight: 600;
+	font-family: "Times New Roman", Times, serif;
+	cursor: pointer;
+}
+
+.search .search-bar:focus {
+	outline: none;
+}
+
+.search .btn:hover {
+	border: 0.2px solid #fff;
+	background: transparent;
+	color: #fff;
+}
+
+.search .btn:focus {
+	outline: none;
+}
+
+/* HERO SECION */
+
+.heroSection {
+	position: relative;
+	top: 140px;
+	left: 40px;
+	/* width: 1200px; */
+	width: 85%;
+	height: auto;
+	margin: auto;
+	color: #fff;
+}
+
+.heroSection h1 {
+	line-height: 1.25em;
+	margin-bottom: 0 0 0 45px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3em;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+.heroSection .paragraph {
+	width: 800px;
+	margin-bottom: 45px;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: 1.2em;
+	letter-spacing: 1.2px;
+}
+
+/* THE BUTTON */
+
+.btn {
+	margin: 20px 0;
+	padding: 10px 30px;
+	background: #fff;
+	height: 40px;
+	color: #000;
+	font-size: 1em;
+	border: none;
+	border-radius: 10px;
+	font-weight: 600;
+	font-family: "Times New Roman", Times, serif;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+.btn:hover {
+	border: 0.2px solid #fff;
+	background: transparent;
+	color: #fff;
+}
+
+/* The FORM */
+
+.form {
+	width: 250px;
+	height: 350px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	backdrop-filter: blur(5px);
+	/* background: rgb(0, 0, 0, 0.125); */
+	position: absolute;
+	top: -20%;
+	left: 900px;
+	padding: 25px;
+	/* border: 1px solid #000; */
+	border-left: 0.125px solid #f2f2f2;
+	border-right: 0.125px solid #f2f2f2;
+}
+
+.form h2 {
+	font-size: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 15px;
+	border-right: 0.1px solid #fff;
+	border-left: 0.1px solid #fff;
+}
+
+.form input {
+	width: 240px;
+	height: 35px;
+	background: transparent;
+	color: rgb(255, 255, 255);
+	border-bottom: 0.1px solid #fff;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	margin: 20px 0 10px 0;
+	font-family: sans-serif;
+	font-size: 1em;
+}
+
+.form p {
+	/* margin: 30px 0; */
+	text-align: center;
+}
+
+.form p a {
+	text-decoration: none;
+	color: rgb(10, 21, 223);
+	font-size: 0.85em;
+	font-style: oblique;
+}
+.form p a:hover {
+	text-decoration: none;
+	color: rgb(49, 49, 49);
+}
+
+.form input:focus {
+	outline: none;
+}
+
+::placeholder {
+	color: #bbbbbb;
+	font-size: 1.2em;
+	font-family: sans-serif;
+}
+
+.form .social-media-icons {
+	text-decoration: none;
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 14px;
+}
+.form .social-media-icons a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2em;
+	font-style: oblique;
+	text-align: center;
+	padding: 0 6px;
+}
