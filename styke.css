@@ -3,7 +3,9 @@
 	padding: 0;
 	/* overflow: hidden; */
 }
-
+body {
+	background: #ddd;
+}
 /* This is the main styling */
 
 .main {
@@ -27,6 +29,7 @@ nav {
 	height: 75px;
 	margin: auto;
 	display: flex;
+	/* overflow-x: hidden; */
 }
 
 .icon {
@@ -46,15 +49,21 @@ nav {
 /* NAVIGATION MENU */
 
 .menu {
-	width: 100%;
+	width: 50%;
 	position: relative;
-	left: 160px;
+	left: 16%;
 	/* width: 72px; */
 	float: left;
 	height: 70px;
 	color: #fff;
 	/* margin-left: 20px; */
 }
+
+/* .small-screen-menu {
+	display: none;
+} */
+
+/* NAVIGATION LIST  */
 
 .nav-ul {
 	float: left;
@@ -65,7 +74,7 @@ nav {
 
 .nav-ul li {
 	list-style-type: none;
-	margin-left: 40px;
+	margin-left: 8%;
 	margin-top: 27px;
 	font-size: 14px;
 }
@@ -74,28 +83,36 @@ nav {
 	text-decoration: none;
 	color: inherit;
 	font-family: inherit;
-	transition: 0.4s ease-in-out;
+	transition: 0.2s ease;
 	padding: 10px;
 	border: 1px solid rgb(255, 255, 255, 0);
 	border-radius: 15px;
-	margin: 5px;
+	margin: 5px 0;
 }
 
-.nav-ul li a:hover {
+.nav-ul li:not(:last-child) a:hover {
 	border: 1px solid #fff;
+}
+
+.nav-ul li:last-child a {
+	font-size: 1.5em;
+}
+.nav-ul li:last-child:hover {
+	color: #bbbbbb;
 }
 
 /* SEARCH AREA */
 
 .search {
-	position: relative;
+	position: absolute;
 	width: 30%;
+	left: -5%;
 	/* width: 330px; */
 	float: left;
 	margin: 0;
 	/* margin-left: 200px; */
 	padding: 20px;
-	display: flex;
+	display: none;
 }
 
 .search-bar {
@@ -112,12 +129,10 @@ nav {
 }
 
 .search .btn {
-	/* width: 100px; */
 	margin: 0;
 	height: 40px;
 	padding: 10px 30px;
 	border-radius: 0 10px 10px 0;
-	/* border: 0.5px solid #fff; */
 	background: #fff;
 	color: #000;
 	font-size: 1em;
@@ -146,10 +161,9 @@ nav {
 	position: relative;
 	top: 140px;
 	left: 40px;
-	/* width: 1200px; */
 	width: 85%;
 	height: auto;
-	margin: auto;
+	margin: 0;
 	color: #fff;
 }
 
@@ -158,12 +172,12 @@ nav {
 	margin-bottom: 0 0 0 45px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 3em;
-	width: 100%;
+	width: 65%;
 	letter-spacing: 2px;
 }
 
 .heroSection .paragraph {
-	width: 800px;
+	width: 60%;
 	margin-bottom: 45px;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 	font-size: 1.2em;
@@ -204,7 +218,7 @@ nav {
 	/* background: rgb(0, 0, 0, 0.125); */
 	position: absolute;
 	top: -20%;
-	left: 900px;
+	left: 65%;
 	padding: 25px;
 	/* border: 1px solid #000; */
 	border-left: 0.125px solid #f2f2f2;
@@ -276,4 +290,35 @@ nav {
 	font-style: oblique;
 	text-align: center;
 	padding: 0 6px;
+}
+
+@media screen and (max-width: 1200px) {
+	/* .search {
+		display: none;
+	} */
+	/* .nav-ul li:last-child {
+		display: block;
+	} */
+	.heroSection {
+		width: 80%;
+		height: auto;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 920px) {
+	.menu {
+		display: none;
+	}
+	.main {
+		display: flex;
+		flex-direction: column;
+	}
+	.form {
+		position: relative;
+		left: 0;
+		top: 20px;
+	}
+	.small-screen-menu {
+		display: block;
+	}
 }
