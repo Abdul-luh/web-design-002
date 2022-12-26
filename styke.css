@@ -335,9 +335,16 @@ nav {
 	}
 	.nav {
 		margin: 30px 0;
+		width: auto;
 	}
 	.nav-ul li:not(:first-child) {
 		display: none;
+	}
+	.nav-ul li {
+		margin-top: 0;
+		position: relative;
+		left: 100%;
+		padding: 0;
 	}
 	.nav-ul li:first-child a {
 		display: block;
