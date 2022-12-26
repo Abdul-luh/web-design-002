@@ -4,14 +4,13 @@
 }
 body {
 	background: rgb(21, 21, 21);
-	overflow-x: hidden;
 }
 /* This is the main styling */
 
 .main {
 	width: 100vw;
 	height: 100vh;
-	overflow-y: hidden;
+	overflow: hidden;
 	background: linear-gradient(
 			to top,
 			rgb(0, 0, 0, 0.5) 50%,
