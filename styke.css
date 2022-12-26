@@ -4,6 +4,7 @@
 }
 body {
 	background: rgb(21, 21, 21);
+	overflow-x: hidden;
 }
 /* This is the main styling */
 
