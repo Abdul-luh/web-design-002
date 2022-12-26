@@ -4,7 +4,7 @@
 }
 body {
 	background: rgb(21, 21, 21);
-	overflow-x: hidden;
+	overflow: hidden;
 }
 /* This is the main styling */
 
@@ -389,7 +389,7 @@ nav {
 	}
 	.form {
 		position: relative;
-		margin: 10% auto;
+		margin: 14% auto;
 		top: auto;
 		left: auto;
 		z-index: 2;
