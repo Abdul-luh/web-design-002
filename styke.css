@@ -370,7 +370,7 @@ nav {
 	.sideNav {
 		display: block;
 		position: fixed;
-		width: 0px;
+		width: 0;
 		height: 100%;
 		z-index: 2;
 		top: 0;
@@ -381,22 +381,23 @@ nav {
 		backdrop-filter: blur(3px);
 		padding-top: 60px;
 	}
-	.sideNav li a,
-	.sideNav > a {
-		padding: 32x 16px 16px 16px;
+	.sideNav div a,
+	.sideNav a {
+		padding: 32px 16px 16px 24px;
 		font-size: 1.2em;
 		display: block;
-		transition: 0.3s;
 		text-decoration: none;
+		color: #fff;
+		transition: 0.3s;
 	}
-	.sidenav li:hover a,
-	.sideNav a {
-		color: #f1f1f1;
+
+	.sideNav a:hover {
+		color: #cecece;
 	}
 	.sideNav .closeBtn {
 		position: absolute;
 		top: 0;
-		left: 25px;
+		left: 45px;
 		font-size: 1.8em;
 		margin-left: 50px;
 	}
@@ -434,7 +435,7 @@ nav {
 		margin: 14% auto;
 		top: auto;
 		left: auto;
-		z-index: 2;
+		z-index: 1;
 	}
 
 	.square1 {
@@ -445,7 +446,7 @@ nav {
 		top: 520px;
 		left: 100px;
 		rotate: 40deg;
-		z-index: 1;
+		z-index: 0;
 		border-radius: 20px;
 		box-shadow: 5px 5px 10px 10px rgba(127, 255, 212, 0.6);
 	}
@@ -456,7 +457,7 @@ nav {
 		top: 60%;
 		left: 70%;
 		rotate: -45deg;
-		z-index: 1;
+		z-index: 0;
 		border-radius: 10px;
 		box-shadow: 2px 2px 10px 10px rgba(127, 255, 212, 0.6);
 	}
@@ -468,7 +469,7 @@ nav {
 		top: 80%;
 		left: 100px;
 		rotate: 70deg;
-		z-index: 1;
+		z-index: 0;
 		border-radius: 20px;
 		box-shadow: 5px 5px 10px 10px burlywood;
 	}
@@ -480,7 +481,7 @@ nav {
 		top: 660px;
 		left: 70%;
 		rotate: -45deg;
-		z-index: 1;
+		z-index: 0;
 		border-radius: 20px;
 		box-shadow: 2px 10px 10px rgba(127, 255, 212, 0.6);
 	}
