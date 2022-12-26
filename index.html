@@ -15,28 +15,30 @@
 				</div>
 				<div class="menu">
 					<ul class="nav-ul">
-						<li><a href="">&#9776;</a></li>
+						<li onclick="openMenuFunc()">
+							<a href="">&#9776;</a>
+						</li>
 						<li><a href="">HOME</a></li>
 						<li><a href="">ABOUT</a></li>
 						<li><a href="">SERVICES</a></li>
 						<li><a href="">DESIGN</a></li>
 						<li><a href="">CONTACT</a></li>
 						<li>
-							<a href="javascript:void(0)">
+							<a href="">
 								<ion-icon class="searchIcon" name="search"></ion-icon>
 							</a>
 						</li>
 					</ul>
-					<!-- <div class="small-screen-menu">
-						<ion-icon class="menuIcon" name="menu"></ion-icon>
-						<ul class="nav-ul">
+					<div class="sideNav" id="sideNavMenu"">
+						<a href="javascript:void(0)" class="closeBtn"  onclick="closeMenuFunc()">&times;</a>
+						<ul>
 							<li><a href="">HOME</a></li>
 							<li><a href="">ABOUT</a></li>
 							<li><a href="">SERVICES</a></li>
 							<li><a href="">DESIGN</a></li>
 							<li><a href="">CONTACT</a></li>
 						</ul>
-					</div> -->
+					</div>
 				</div>
 				<div class="search">
 					<input
@@ -102,6 +104,14 @@
 				<div class="square4"></div>
 			</div>
 		</main>
+		<script>
+			function openMenuFunc() {
+				document.getElementById("sideNavMenu").style.width = "300px";
+			};
+			function closeMenuFunc() {
+				document.getElementById("sideNavMenu").style.width = "0px";
+			}
+		</script>
 		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 	</body>
 </html>
